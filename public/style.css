@@ -1,0 +1,167 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato:ital,wght@1,300&family=Lobster&family=Skranji&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+section.chat_section{
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0,0, 0, 0.1), 0 4px 6px -2px rgba(0,0,0,0.05)
+}
+
+.brand{
+    padding: 20px;
+    background: #f1f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+
+.message_area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background-image: #F8F8F8;
+}
+
+.message{
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming{
+    background: 8F8BF8;
+    color: #fff;
+}
+
+.outcoming{
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+
+}
+
+.message h4{
+    position: absolute;
+    top: -20px;
+    left:0;
+    color:#333;
+    font: size 14px;
+} */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat_section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+}
+
+.brand {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #3C8D40;
+}
+
+.brand img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.message_area {
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 300px;
+    /* Set a maximum height for the message area */
+}
+
+.message {
+    margin-bottom: 15px;
+}
+
+.incoming {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.outgoing {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: right;
+}
+
+textarea {
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #4CAF50;
+}
